@@ -17,6 +17,7 @@ function Home() {
             key={logement.id}
             image={logement.cover}
             title={logement.title}
+            id={logement.id}
           />
         ))}
       </div>
