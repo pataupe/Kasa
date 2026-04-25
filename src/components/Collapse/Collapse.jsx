@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './Collapse.scss'
+import flecheBas from '../../assets/images/flechebas.svg'
 
 function Collapse({ title, content }) {
     const [isOpen, setIsOpen] = useState(false)
@@ -8,9 +9,11 @@ function Collapse({ title, content }) {
         <div className="collapse">
             <div className="collapse__header" onClick={() => setIsOpen(!isOpen)}>
                 <h2>{title}</h2>
-                <i className={`collapse__arrow ${isOpen ? 'collapse__arrow--open' : ''}`}>
-                    ▲
-                </i>
+                <img
+                    src={flecheBas}
+                    alt="Toggle"
+                    className={`collapse__arrow ${isOpen ? 'collapse__arrow--open' : ''}`}
+                />
             </div>
             {isOpen && (
                 <div className="collapse__content">

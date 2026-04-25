@@ -1,0 +1,90 @@
+.logement__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.logement__info__adresse {
+    h1 {
+        font-size: 36px;
+        font-weight: 500;
+        color: #FF6060;
+        margin: 16px 0;
+    }
+
+    h2 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.logement__info__proprietaire {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 15%;
+
+    img {
+        border-radius: 150px;
+        width: 64px;
+    }
+}
+
+.logement__info__proprietaire__nom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FF6060;
+    gap: 10px;
+
+    span {
+        text-align: center;
+    }
+}
+
+.logement__info__proprietaire__rating {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 28px;
+    gap:10px;
+}
+
+.logement__star {
+    color: #E3E3E3;
+
+    &--active {
+        color: #FF6060;
+    }
+}
+
+
+
+.logement__tags {
+    display: flex;
+    gap: 20px;
+    margin: 28px 0;
+
+    span {
+        background-color: #FF6060;
+        padding: 8px 30px;
+        height: fit-content;
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 14px;
+    }
+}
+
+.logement__collapse {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+.logement__collapse .collapse {
+    width: calc((100% - 60px) / 2);
+}

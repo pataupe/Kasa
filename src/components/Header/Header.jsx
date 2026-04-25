@@ -5,7 +5,9 @@ import './Header.scss'
 function Header() {
     return (
         <header>
+            <Link to='/'>
             <img src={logo} alt="Kasa" />
+            </Link>
             <nav>
                 <ul>
                     <li><Link to="/">Accueil</Link></li>
