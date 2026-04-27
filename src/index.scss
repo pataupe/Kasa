@@ -5,8 +5,15 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-#root {
+.content-container {
   max-width: 1240px; 
   margin: 0 auto;     
   padding: 0 60px;    
 }
+
+@media (max-width: 767.98px) {
+  .content-container {
+  padding: 0 16px;
+  }
+}
+
