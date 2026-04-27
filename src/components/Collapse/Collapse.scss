@@ -14,7 +14,7 @@
         h2 {
             margin: 0;
             font-size: 24px;
-            font-weight: 500;
+            font-weight: 700;
         }
     }
 
@@ -44,5 +44,28 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .collapse {
+        margin-bottom: 20px;
+        &__header {
+
+            padding: 8px 14px;
+
+            img {
+                height: 10px;
+                width: 18px;
+            }
+
+            h2 {
+                font-size: 15px;
+            }
+        }
+
+        &__content {
+          font-size: 13px;
+        }
     }
 }

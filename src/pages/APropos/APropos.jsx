@@ -5,7 +5,7 @@ import "./APropos.scss"
 
 function APropos() {
   return (
-    <div>
+    <div className="collapse-container">
       <Banner 
       image={banner}
       />
