@@ -9,15 +9,16 @@ import Footer from './components/Footer/Footer'
 function Router() {
     return (
         <BrowserRouter>
-            <div className='content-container'>
                 <Header />
-                <Routes> <Route path="/" element={<Home />} />
+                <main className='content-container'>
+                <Routes> 
+                    <Route path="/" element={<Home />} />
                     <Route path="/logement/:id" element={<Logement />} />
                     <Route path="/a-propos" element={<APropos />} />
                     <Route path="/404" element={<Error404 />} />
                     <Route path="*" element={<Navigate to="/404" replace />} />
                 </Routes>
-            </div>
+                </main>
             <Footer />
         </BrowserRouter>
     )

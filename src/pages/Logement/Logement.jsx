@@ -28,7 +28,7 @@ function Logement() {
     return stars
   }
   return (
-    <div className="logement">
+    <article className="logement">
       <div className="logement__carousel">
         <Slideshow pictures={logement.pictures} />
       </div>
@@ -46,7 +46,7 @@ function Logement() {
         <div className="logement__info__proprietaire">
           <div className="logement__info__proprietaire__nom">
             <span> {logement.host.name}</span>
-            <img src={logement.host.picture}></img>
+            <img src={logement.host.picture} alt={logement.host.name} />
           </div>
           <div className="logement__info__proprietaire__rating">
             {renderStars(parseInt(logement.rating))}
@@ -69,7 +69,7 @@ function Logement() {
           }
         />
       </div>
-    </div>
+    </article>
   )
 }
 

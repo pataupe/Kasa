@@ -6,6 +6,7 @@ import "./APropos.scss"
 function APropos() {
   return (
     <div className="collapse-container">
+      <h1 className="sr-only">À propos</h1>
       <Banner 
       image={banner}
       />

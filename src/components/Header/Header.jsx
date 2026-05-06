@@ -4,7 +4,7 @@ import './Header.scss'
 
 function Header() {
     return (
-        <header>
+        <header className='content-container'>
             <Link to='/'>
             <img src={logo} alt="Kasa" />
             </Link>
